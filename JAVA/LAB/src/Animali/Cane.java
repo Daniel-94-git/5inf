@@ -1,6 +1,6 @@
 package Animali;
 
-public class Cane extends Animali {
+public class Cane extends Animali implements AzioniAnimali{
 
     private Boolean codaLunga;
 
@@ -8,6 +8,11 @@ public class Cane extends Animali {
         super(zampe, peso, nome);
         this.codaLunga = codaLunga;
     }
+
+    @Override
+    public void verso(){
+        System.out.println("Bau Bau!");
+    };
 
     public  Boolean lunghezzaCoda(){
         if(codaLunga){

@@ -12,6 +12,7 @@ public class Main {
         gatto.getNome();
         gatto.mangia(2);
         gatto.zampaPersa();
+        gatto.verso();
 
         System.out.println("\n\n");
         System.out.println("CANE");
@@ -19,6 +20,7 @@ public class Main {
         cane.mangia(2);
         cane.zampaPersa();
         cane.getNome();
-
+        cane.verso();
+        cane.dormi();
     }
 }

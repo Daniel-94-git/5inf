@@ -1,6 +1,6 @@
 package Animali;
 
-public class Animali {
+public class Animali implements AzioniAnimali {
     private int zampe;
     private int peso;
     private String nome;
@@ -11,11 +11,26 @@ public class Animali {
         this.nome = nome;
     }
 
+    @Override
+    public void mangia() {
+
+    }
+
     public void zampaPersa(){
         if(this.zampe > 0){
             this.zampe--;
             System.out.println("Hai perso una zampa :(");
         }
+    }
+
+    @Override
+    public void verso() {
+        AzioniAnimali.super.verso();
+    }
+
+    @Override
+    public void dormi() {
+        AzioniAnimali.super.dormi();
     }
 
     public int mangia( int aumentoPeso){
