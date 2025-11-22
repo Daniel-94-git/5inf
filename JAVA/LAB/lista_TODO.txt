@@ -1,0 +1,2 @@
+comprare gioco cane;true
+comprare gioco gatto;false
