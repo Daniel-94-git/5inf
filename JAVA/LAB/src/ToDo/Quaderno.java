@@ -41,6 +41,7 @@ public class Quaderno {
                 System.out.println(i + ". " + listaAzioni.get(i));
             }
         }
+
         System.out.println("----------------------------------");
     }
 
